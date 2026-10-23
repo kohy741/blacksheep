@@ -76,3 +76,9 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
   height: 22px;
   display: block;
 }
+.footer-logo .logo-img {
+  height: 22px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+}
