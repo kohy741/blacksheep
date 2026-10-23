@@ -95,3 +95,45 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
   -webkit-mask-size: contain;
   mask-size: contain;
 }
+.contact-section {
+  padding: 100px 8%;
+  background: #080808;
+  color: #fff;
+  border-top: 1px solid #333;
+}
+
+.contact-label {
+  color: #AAAAAA;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.contact-section h2 {
+  font-size: clamp(42px, 7vw, 80px);
+  margin: 0 0 16px;
+  letter-spacing: -2px;
+}
+
+.contact-description {
+  color: #AAAAAA;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+.contact-email {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 72px 6%;
+  }
+
+  .contact-email {
+    font-size: 14px;
+  }
+}
