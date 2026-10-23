@@ -81,4 +81,5 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
   width: auto;
   max-width: 140px;
   object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(70%);
 }
