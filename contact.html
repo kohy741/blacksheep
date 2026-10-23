@@ -25,6 +25,17 @@
       color: #AAAAAA;
       font-size: 12px;
       letter-spacing: 2px;
+      .home-logo {
+        display: block;
+        line-height: 0;
+      }      
+      .home-logo img {
+        display: block;
+        height: 32px;
+        width: auto;
+        max-width: 180px;
+        object-fit: contain;
+      }
     }
 
     main {
@@ -69,8 +80,14 @@
   </style>
 </head>
 <body>
-  <header>
+  <!-- <header>
     <span>BLACKSHEEP</span>
+    <span>CONTACT</span>
+  </header> -->
+  <header>
+    <a class="home-logo" href="index.html" aria-label="Back to home">
+      <img src="logo.png" alt="BLACKSHEEP">
+    </a>
     <span>CONTACT</span>
   </header>
 
