@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABOUT — BLACKSHEEP</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #080808;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 32px 7%;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .home-logo {
+      display: block;
+      line-height: 0;
+    }
+
+    .home-logo img {
+      display: block;
+      height: 32px;
+      width: auto;
+      max-width: 180px;
+      object-fit: contain;
+    }
+
+    .page-title {
+      margin-left: auto;
+      margin-right: 28px;
+      color: #aaa;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .menu-toggle {
+      width: 28px;
+      height: 28px;
+      padding: 4px 0;
+      border: 0;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+    }
+
+    .page-nav {
+      display: none;
+      position: absolute;
+      top: 45px;
+      right: 0;
+      z-index: 10;
+      min-width: 180px;
+      padding: 22px;
+      background: #111;
+      border: 1px solid #333;
+    }
+
+    .page-nav.open {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .page-nav a {
+      color: #aaa;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+
+    .page-nav a:hover {
+      color: #fff;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 100px auto 120px;
+    }
+
+    h1 {
+      margin: 0 0 65px;
+      font-size: clamp(42px, 8vw, 82px);
+      letter-spacing: -3px;
+      font-weight: 700;
+    }
+
+    .language {
+      color: #777;
+      font-size: 11px;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+    }
+
+    .bio {
+      font-size: 15px;
+      line-height: 2.2;
+      color: #ccc;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+
+    .bio p {
+      margin: 0 0 24px;
+    }
+
+    .english {
+      margin-top: 85px;
+      padding-top: 45px;
+      border-top: 1px solid #292929;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 65px;
+      color: #aaa;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    .back-home:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 25px 7%;
+      }
+
+      main {
+        margin-top: 75px;
+        margin-bottom: 80px;
+      }
+
+      h1 {
+        margin-bottom: 45px;
+        letter-spacing: -2px;
+      }
+
+      .bio {
+        font-size: 14px;
+        line-height: 2;
+      }
+
+      .english {
+        margin-top: 65px;
+        padding-top: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="home-logo" href="index.html" aria-label="Back to home">
+      <img src="logo.png" alt="BLACKSHEEP">
+    </a>
+
+    <span class="page-title">ABOUT</span>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="page-nav" id="pageNav">
+      <a href="index.html#home">HOME</a>
+      <a href="index.html#about">ABOUT</a>
+      <a href="index.html#busking">VIDEO</a>
+      <a href="index.html#gallery">GALLERY</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>ABOUT<br>BLACKSHEEP</h1>
+
+    <section class="bio">
+      <p>BLACKSHEEP는 2026년부터 본격적으로 음악 활동을 시작한, 자유로운 영혼의 싱어이자 배우다.</p>
+
+      <p>R&amp;B, Soul, Jazz를 기반으로 자신만의 독특한 목소리와 감성으로 노래하며, 음악을 통해 사람들의 마음에 깊은 울림을 전하고자 한다.</p>
+
+      <p>인천을 기반으로 활동하며, 거리라는 열린 무대에서 더 많은 사람들과 음악으로 소통하기 위해 전국 곳곳을 찾아다닌다.</p>
+
+      <p>BLACKSHEEP는 인간이 느끼는 수많은 감정을 자신만의 목소리로 섬세하면서도 강렬하게 표현해 내는 보이스를 지녔다. 기쁨과 슬픔, 사랑과 분노, 그리고 말로 다 표현하기 어려운 복잡한 감정까지 음악에 담아내며 듣는 이들의 마음에 깊은 여운을 남긴다.</p>
+    </section>
+
+    <section class="bio english">
+      <p class="language">ENGLISH</p>
+
+      <p>BLACKSHEEP is a singer and actor who began his musical journey in 2026 — a free spirit.</p>
+
+      <p>Rooted in R&amp;B, Soul, and Jazz, he brings his own distinctive voice and emotion to every performance, aiming to leave a profound impression on those who listen.</p>
+
+      <p>Based in Incheon, South Korea, BLACKSHEEP travels across the country, connecting with people through music on the open stage of the streets.</p>
+
+      <p>BLACKSHEEP possesses a voice capable of expressing the many emotions of the human experience with both subtlety and intensity. From joy and sorrow to love, anger, and the complex feelings that words cannot fully describe, he captures these emotions through music and leaves a lasting impression on the hearts of his listeners.</p>
+    </section>
+
+    <a class="back-home" href="index.html">← BACK TO HOME</a>
+  </main>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const pageNav = document.getElementById('pageNav');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = pageNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!menuToggle.contains(event.target) &&
+          !pageNav.contains(event.target)) {
+        pageNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>
