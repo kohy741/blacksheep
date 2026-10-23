@@ -65,3 +65,14 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
   object-fit: contain;
   display: block;
 }
+.social-mini a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-mini svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
