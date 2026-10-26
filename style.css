@@ -97,21 +97,6 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
 }
 
 
-/* .email-copy {
-  display: flex;
-  align-items: center;
-  gap: 0;
-}
-
-.copy-icon-wrap {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  top: 2px;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
 
 #copyEmail {
   display: block;
@@ -119,18 +104,16 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
   height: 22px;
   padding: 0;
   margin: 0;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  -webkit-tap-highlight-color: transparent;
+  background: transparent;
+  border: none;
+  box-shadow: none;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 #copyEmail:hover {
   opacity: 0.7;
-  transform: translateY(-1px) scale(1.12);
+  transform: scale(1.12);
 }
 
 #copyEmail:active {
@@ -140,4 +123,12 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
 #copyEmail:focus-visible {
   outline: 1px solid #888;
   outline-offset: 4px;
-} */
+}
+
+#copySuccess {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  line-height: 1;
+}
+
