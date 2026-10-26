@@ -247,6 +247,41 @@
         menuToggle.setAttribute('aria-expanded', 'false');
       }
     });
+  
+    const copyIcon = document.getElementById('copyEmail');
+  
+    if (copyIcon) {
+      async function copyEmail() {
+        if (document.getElementById('copySuccess')) return;
+  
+        try {
+          await navigator.clipboard.writeText('contact@blacksheep.co.kr');
+  
+          const check = document.createElement('span');
+          check.id = 'copySuccess';
+          check.textContent = '✓';
+  
+          copyIcon.insertAdjacentElement('afterend', check);
+          copyIcon.style.display = 'none';
+  
+          setTimeout(() => {
+            check.remove();
+            copyIcon.style.display = '';
+          }, 1200);
+        } catch (error) {
+          alert('Copy failed. Please try again!');
+        }
+      }
+  
+      copyIcon.addEventListener('click', copyEmail);
+  
+      copyIcon.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          copyEmail();
+        }
+      });
+    }
   </script>
 </body>
 </html>
