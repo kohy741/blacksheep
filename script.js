@@ -14,32 +14,41 @@ document.querySelector("#year").textContent = new Date().getFullYear();
 
 
 
+
 const copyIcon = document.getElementById("copyEmail");
-const originalIcon = copyIcon.src;
 
-async function copyEmail() {
-  try {
-    await navigator.clipboard.writeText("contact@blacksheep.co.kr");
+if (copyIcon) {
+  let resetTimer;
 
-    copyIcon.style.visibility = "hidden";
-    copyIcon.insertAdjacentHTML(
-      "afterend",
-      '<span id="copySuccess" style="font-size:22px; color:#fff;">✓</span>'
-    );
+  async function copyEmail() {
+    if (document.getElementById("copySuccess")) return;
 
-    setTimeout(() => {
-      document.getElementById("copySuccess")?.remove();
-      copyIcon.style.visibility = "visible";
-    }, 1200);
-  } catch (error) {
-    alert("이메일 복사에 실패했어. 다시 시도해 줘!");
+    try {
+      await navigator.clipboard.writeText("contact@blacksheep.co.kr");
+
+      const check = document.createElement("span");
+      check.id = "copySuccess";
+      check.textContent = "✓";
+
+      copyIcon.insertAdjacentElement("afterend", check);
+      copyIcon.style.display = "none";
+
+      resetTimer = setTimeout(() => {
+        check.remove();
+        copyIcon.style.display = "block";
+      }, 1200);
+    } catch (error) {
+      alert("try again!");
+    }
   }
+
+  copyIcon.addEventListener("click", copyEmail);
+
+  copyIcon.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      copyEmail();
+    }
+  });
 }
 
-copyIcon.addEventListener("click", copyEmail);
-copyIcon.addEventListener("keydown", (event) => {
-  if (event.key === "Enter" || event.key === " ") {
-    event.preventDefault();
-    copyEmail();
-  }
-});
