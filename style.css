@@ -34,7 +34,7 @@ section{border-bottom:1px solid var(--line)}
 .values strong{display:block;margin-bottom:18px}
 .values p{color:#aaa;margin:8px 0}
 .busking{display:grid;grid-template-columns:1.35fr .8fr .9fr;gap:3.5%;align-items:center;padding:28px 6.5%}
-.busking-image{height:220px;background-image:url("./asiad.jpg")}
+.busking-image{height:220px;background-position: center 40%;background-image:url("./asiad.jpg")}
 .busking-copy h2{font-size:25px}
 .busking-copy .outline-button{margin-top:2px}
 .video-tile{height:150px;position:relative;display:flex;align-items:center;justify-content:center;background-image:linear-gradient(#0005,#0005),url("https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=500&q=80")}
