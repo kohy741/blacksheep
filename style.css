@@ -10,9 +10,7 @@ a{color:inherit;text-decoration:none}
 .nav a:hover,footer a:hover{color:#aaa}
 .social-mini{display:flex;gap:18px;font-size:17px}.social-mini a{font-size:16px}
 .menu-toggle{display:none;background:none;border:0;color:white;font-size:24px}
-/* .hero{height:min(690px,88vh);min-height:560px;position:relative;display:flex;align-items:center;padding:100px 6.5% 50px;overflow:hidden;background:#171717 url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=2200&q=85") center 42%/cover no-repeat} */
-.hero{height:min(690px,88vh);min-height:560px;position:relative;display:flex;align-items:center;padding:100px 6.5% 50px;overflow:hidden;background-position: center 20%;background:#171717 url("./profile pic.jpg") center 42%/cover no-repeat}
-
+.hero{height:min(690px,88vh);min-height:560px;position:relative;display:flex;align-items:center;padding:100px 6.5% 50px;overflow:hidden;background:#171717 url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=2200&q=85") center 42%/cover no-repeat}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.64) 37%,rgba(0,0,0,.15) 75%),linear-gradient(0deg,rgba(0,0,0,.65),transparent 45%)}
 .hero-copy{position:relative;z-index:1;max-width:600px}
 .hero h1{font-size:clamp(60px,8vw,112px);letter-spacing:-7px;line-height:.95;margin:0 0 24px;font-weight:800}
@@ -30,7 +28,7 @@ section{border-bottom:1px solid var(--line)}
 .section-intro h2,.busking-copy h2{font-size:clamp(24px,2.2vw,34px);line-height:1.12;letter-spacing:-.7px;margin:0 0 14px}
 .section-intro>p:not(.eyebrow),.busking-copy>p:not(.eyebrow){font-family:"Noto Sans KR",sans-serif;color:#bbb;font-size:12px;line-height:1.9;margin:0 0 22px}
 .photo{background-color:#1a1a1a;background-size:cover;background-position:center;filter:grayscale(1)}
-.about-image{height:235px;background-image:url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=85")}
+.about-image{height:235px;background-position: center 20%;background-image:url("./profile pic.jpg")}
 .values{font-size:10px;letter-spacing:1.4px;padding-left:4px}
 .values .small-line{display:block;width:28px;height:2px;background:#eee;margin-bottom:15px}
 .values strong{display:block;margin-bottom:18px}
