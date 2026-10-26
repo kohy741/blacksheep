@@ -264,7 +264,11 @@
           check.id = 'copySuccess';
           check.textContent = '✔';
   
-          copyIcon.insertAdjacentElement('afterend', check);
+          copyIcon.parentElement.appendChild(check);
+          check.style.position = 'absolute';
+          check.style.left = '50%';
+          check.style.top = '50%';
+          check.style.transform = 'translate(-50%, -50%)';
           copyIcon.style.visibility = 'hidden';
   
           setTimeout(() => {
