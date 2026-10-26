@@ -28,7 +28,7 @@ section{border-bottom:1px solid var(--line)}
 .section-intro h2,.busking-copy h2{font-size:clamp(24px,2.2vw,34px);line-height:1.12;letter-spacing:-.7px;margin:0 0 14px}
 .section-intro>p:not(.eyebrow),.busking-copy>p:not(.eyebrow){font-family:"Noto Sans KR",sans-serif;color:#bbb;font-size:12px;line-height:1.9;margin:0 0 22px}
 .photo{background-color:#1a1a1a;background-size:cover;background-position:center;filter:grayscale(1)}
-.about-image{height:235px;background-position: center 20%;background-image:url("./profile pic.jpg")}
+.about-image{height:235px;background-position: center 17%;background-image:url("./profile pic.jpg")}
 .values{font-size:10px;letter-spacing:1.4px;padding-left:4px}
 .values .small-line{display:block;width:28px;height:2px;background:#eee;margin-bottom:15px}
 .values strong{display:block;margin-bottom:18px}
