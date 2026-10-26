@@ -262,14 +262,14 @@
   
           const check = document.createElement('span');
           check.id = 'copySuccess';
-          check.textContent = '✓';
+          check.textContent = '✔';
   
           copyIcon.insertAdjacentElement('afterend', check);
-          copyIcon.style.display = 'none';
+          copyIcon.style.visibility = 'hidden';
   
           setTimeout(() => {
             check.remove();
-            copyIcon.style.display = '';
+            copyIcon.style.visibility = 'visible';
           }, 1200);
         } catch (error) {
           alert('Copy failed. Please try again!');
