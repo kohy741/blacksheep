@@ -121,3 +121,10 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
   -webkit-mask-size: contain;
   mask-size: contain;
 }
+
+@media(max-width:850px){
+  .social-mini{
+    position:relative;
+    top:2px;
+  }
+}
