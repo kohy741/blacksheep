@@ -116,6 +116,9 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
   box-shadow: none !important;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  top: 2px;
 }
 
 #copyEmail {
