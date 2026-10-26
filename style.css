@@ -36,7 +36,7 @@ section{border-bottom:1px solid var(--line)}
 .values strong{display:block;margin-bottom:18px}
 .values p{color:#aaa;margin:8px 0}
 .busking{display:grid;grid-template-columns:1.35fr .8fr .9fr;gap:3.5%;align-items:center;padding:28px 6.5%}
-.busking-image{height:220px;background-position: center 20%;background-image:url("./profile pic.jpg")}
+.busking-image{height:220px;background-image:url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=2200&q=85")}
 .busking-copy h2{font-size:25px}
 .busking-copy .outline-button{margin-top:2px}
 .video-tile{height:150px;position:relative;display:flex;align-items:center;justify-content:center;background-image:linear-gradient(#0005,#0005),url("https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1000&q=85")}
