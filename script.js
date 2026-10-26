@@ -31,11 +31,11 @@ if (copyIcon) {
       check.textContent = '✔';
 
       copyIcon.insertAdjacentElement("afterend", check);
-      copyIcon.style.visibility = 'hidden';
+      copyIcon.style.display = "none";
 
       resetTimer = setTimeout(() => {
         check.remove();
-       copyIcon.style.visibility = 'visible';
+        copyIcon.style.display = "block";
       }, 1200);
     } catch (error) {
       alert("try again!");
@@ -51,4 +51,3 @@ if (copyIcon) {
     }
   });
 }
-
