@@ -96,3 +96,32 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
   mask-size: contain;
 }
 
+#copyEmail {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0;
+  box-shadow: none !important;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+#copyEmail img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  background: transparent;
+}
+
+#copyEmail:hover,
+#copyEmail:focus,
+#copyEmail:active {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
