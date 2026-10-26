@@ -166,3 +166,18 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
     height:28px;
   }
 }
+.youtube-logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:none !important;
+  border:0 !important;
+  width:64px;
+  height:46px;
+}
+
+.youtube-logo svg{
+  display:block;
+  width:64px;
+  height:46px;
+}
