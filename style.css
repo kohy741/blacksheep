@@ -97,7 +97,7 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
 }
 
 
-.email-copy {
+/* .email-copy {
   display: flex;
   align-items: center;
   gap: 0;
@@ -140,4 +140,4 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
 #copyEmail:focus-visible {
   outline: 1px solid #888;
   outline-offset: 4px;
-}
+} */
