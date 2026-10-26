@@ -128,3 +128,13 @@ footer div{display:flex;gap:22px}footer a{font-size:8px;color:#aaa}
     top:2px;
   }
 }
+
+@media(max-width:850px){
+  .menu-toggle{
+    width:32px;
+    min-width:32px;
+    padding:0;
+    text-align:center;
+    flex-shrink:0;
+  }
+}
