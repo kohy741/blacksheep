@@ -28,7 +28,7 @@ if (copyIcon) {
 
       const check = document.createElement("span");
       check.id = "copySuccess";
-      check.textContent = "✓";
+      check.textContent = '✔';
 
       copyIcon.insertAdjacentElement("afterend", check);
       copyIcon.style.display = "none";
