@@ -37,7 +37,7 @@ section{border-bottom:1px solid var(--line)}
 .busking-image{height:220px;background-position: center 45%;background-image:url("./asiad.jpg")}
 .busking-copy h2{font-size:25px}
 .busking-copy .outline-button{margin-top:2px}
-.video-tile{height:150px;position:relative;display:flex;align-items:center;justify-content:center;background-image:linear-gradient(#0005,#0005),url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=500&q=80")}
+.video-tile{height:150px;position:relative;display:flex;align-items:center;justify-content:center;background-image:linear-gradient(#0005,#0005),url("./chungra.png")}
 .play{width:42px;height:42px;border:1px solid #fff;border-radius:50%;display:grid;place-items:center;padding-left:3px;font-size:13px}
 .tile-caption{position:absolute;bottom:8px;left:10px;font-size:8px;letter-spacing:1px}
 .gallery{grid-template-columns:.8fr 1.8fr .5fr;padding-top:34px;padding-bottom:34px}
