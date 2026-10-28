@@ -45,7 +45,11 @@ section{border-bottom:1px solid var(--line)}
 .gallery-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .gallery-photo{height:135px}
 .gallery-one{background-image:url("./chungra.png")}
-.gallery-two{background-image:url("./blue.PNG")}
+.gallery-two{   
+                background-image:url("./blue.PNG");
+                background-size:cover;
+                background-position:center top;
+            }
 .gallery-three{background-image:url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=500&q=80")}
 .instagram-card{border:1px solid #555;min-height:135px;padding:15px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:6px}
 .instagram-icon{font-size:25px;line-height:1}
